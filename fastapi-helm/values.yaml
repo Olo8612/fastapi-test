@@ -1,0 +1,23 @@
+app:
+  name: fastapi-test
+  replicas: 2
+  port: 80
+
+image:
+  repository: fastapi_private
+  tag: latest
+
+service:
+  type: LoadBalancer
+
+ingress:
+  enabled: true
+  host: fastapi.local
+
+resources:
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+  requests:
+    memory: "256Mi"
+    cpu: "250m"

@@ -1,0 +1,8 @@
+apiVersion: v2
+name: fastapi-test
+version: 0.1.0
+description: Test helm chart to deploy sample fastapi app
+# dependencies:
+#   - name: postgresql
+#     repository: https://charts.bitnami.com/bitnami
+#     version: 11.x.x
